@@ -1,0 +1,51 @@
+import 'package:dressing_outlet/views/pages/dash_board/category_page/category.dart';
+import 'package:dressing_outlet/views/pages/dash_board/store_page/store.dart';
+import 'package:dressing_outlet/views/pages/dash_board/sub_dashoard/sub_dashboard.dart';
+import 'package:dressing_outlet/views/pages/dash_board/upload_page/upload.dart';
+import 'package:flutter/material.dart';
+import 'home_page/home.dart';
+
+class SellerDashBoard extends StatefulWidget {
+  const SellerDashBoard({Key? key}) : super(key: key);
+  @override
+  State<SellerDashBoard> createState() => _SellerDashBoardState();
+}
+
+class _SellerDashBoardState extends State<SellerDashBoard> {
+  var selectIndex = 0;
+  final List<Widget> _tabList = const [
+    Home(),
+    Category(),
+    Store(),
+    Upload(),
+    SubDashboard(),
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: _tabList[selectIndex],
+      bottomNavigationBar: BottomNavigationBar(
+          elevation: 0,
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.yellow,
+          selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+          unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold) ,
+          unselectedItemColor: Colors.black54,
+          currentIndex: selectIndex,
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.search), label: "Category"),
+            BottomNavigationBarItem(icon: Icon(Icons.store), label: "Store"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.upload), label: "Uplaod"),
+            BottomNavigationBarItem(icon: Icon(Icons.dashboard), label: "DashBoard"),
+          ],
+          onTap: (index) {
+            setState(() {
+              selectIndex = index;
+            });
+          }),
+    );
+  }
+}
