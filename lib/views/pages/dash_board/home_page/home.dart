@@ -1,4 +1,3 @@
-import 'package:dressing_outlet/views/widgets/cupertino_search_bar.dart';
 import 'package:dressing_outlet/views/widgets/repeated_tab.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

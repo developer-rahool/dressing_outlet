@@ -19,10 +19,10 @@ class SearchScreen extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
               child: Row(
-                children:const  [
+                children:[
                    Icon(Icons.search, color: Colors.grey,),
                    Text("Search Here", style: TextStyle(fontSize: 16, color: Colors.grey),),
                 ],

@@ -1,6 +1,4 @@
-import 'package:dressing_outlet/views/pages/dash_board/customer_dashboard.dart';
 import 'package:dressing_outlet/views/pages/dash_board/seller_dashboard.dart';
-import 'package:dressing_outlet/views/pages/welcome_screen/welcome.dart';
 import 'package:flutter/material.dart';
 
 void main() {

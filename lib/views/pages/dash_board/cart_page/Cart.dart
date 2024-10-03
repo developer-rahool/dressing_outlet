@@ -122,8 +122,8 @@ class Cart extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>  [
-            Row(
-              children: const  [
+            const Row(
+              children: [
                 Text(
                   "Total: Rs",
                   style: TextStyle(

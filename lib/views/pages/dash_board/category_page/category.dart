@@ -1,4 +1,3 @@
-import 'package:dressing_outlet/utils/Category_list.dart';
 import 'package:dressing_outlet/views/pages/dash_board/category_page/Bags_category/bags_category.dart';
 import 'package:dressing_outlet/views/pages/dash_board/category_page/beauty_category/beauty_category.dart';
 import 'package:dressing_outlet/views/pages/dash_board/category_page/men_category/men_category.dart';
@@ -6,7 +5,6 @@ import 'package:dressing_outlet/views/pages/dash_board/category_page/shoes_categ
 import 'package:dressing_outlet/views/pages/dash_board/category_page/women_category/women_category.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../../widgets/cupertino_search_bar.dart';
 import '../../../widgets/repeated_tab.dart';
 
 class Category extends StatefulWidget {
